@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="child">
+<head>
+    <meta charset="UTF-8">
+    <title>Child Controller</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body ng-controller="controller">
+    {{nombre}}
+    <p><strong>Valor rootScope</strong>{{$parent.nombre}}</p>
+    <div ng-controller="ChildController">
+        <p><strong>Valor ChildController</strong>{{nombre}}</p>
+        <input type="text"ng-model="$parent.nombre">
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+    <style>
+        .hover{
+            background-color: #ff2d23;
+        }.no-hover{
+                     background-color: #2efaff;
+                 }
+    </style>
+    <meta charset="UTF-8">
+    <title>NG-EVENT</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+</head>
+<body>
+    <button ng-click="bandera = !bandera" ng-class="{'hover':bandera,'no-hover':!bandera}">
+        ahora si
+    </button><span ng-show="bandera ">&lt;-ya no</span>
+</body>
+</html>
